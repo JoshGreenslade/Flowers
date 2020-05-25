@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Hello World!</h1>
+    <img src="{{ url_for('static', filename=img)}}"  class="rounded mx-auto d-block" id="flower" alt="Responsive image">
+</div>
+<a href="{{ url_for('home') }}">
+    <button type="button" class="btn btn-success">Generate New Flower</button>
+</a>
+{% endblock %}
