@@ -1,5 +1,3 @@
-import tensorflow as tf
-tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 from flask import Flask, render_template
 from models.flower_generator import FlowerGen
 
